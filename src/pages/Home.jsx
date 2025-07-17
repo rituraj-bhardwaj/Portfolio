@@ -17,38 +17,46 @@ const Button = ({ children, route, className }) => {
 
 const Home = () => {
   return (
-    <Container className={'md:flex justify-center items-center gap-8 md:p-24'}>
-      <div className="w-full hidden md:flex max-w-[500px]">
-        <img src={pic} alt="my profile picture"  className="object-cover rounded-full"/>
+    <Container className={"md:flex justify-center items-center gap-8 md:p-24"}>
+      <div className="w-full max-w-[400px] hidden md:flex">
+        <img
+          src={pic}
+          alt="my profile picture"
+          className="object-cover rounded-full"
+        />
       </div>
 
       <div className="md:w-[475px]">
-        <h1 className="text-4xl font-bold text-left mt-2 mb-2 md:text-8xl md:mb-6">Hello</h1>
+        <h1 className="text-4xl font-bold text-left mt-2 mb-2 md:text-8xl md:mb-6">
+          Hello
+        </h1>
         <p className="text-lg font-semibold">A Bit About Me,</p>
         <p className="text-md ">
-          Hi, I'm a full stack web-developer. I have done React.js, Node.js,
-          Express.js, PostgreSQL, REST API. I have completed saveral projects
-          for honning my skills. Now I am learning Gen-AI with Python.
+          I’m Rituraj Bhardwaj — a full-stack web developer skilled in React.js,
+          Node.js, Express.js, PostgreSQL, and REST APIs. I’ve built several
+          projects to sharpen my skills and am currently exploring Gen-AI with
+          Python.
         </p>
 
         <div className="w-full flex justify-between items-center py-4">
-          <Button
-            route={"/"}
-            className={"bg-[#EEA302]"}
-          >Resume</Button>
-          <Button
-            route={"/projects"}
-            className={"bg-[#FF3B25]"}
-          >Projects</Button>
-          <Button
-            route={"/"}
-            className={"bg-[#80D8DA]"}
-          >Contact</Button>
+          <Button route={"/"} className={"bg-[#EEA302]"}>
+            Resume
+          </Button>
+          <Button route={"/projects"} className={"bg-[#FF3B25]"}>
+            Projects
+          </Button>
+          <Button route={"/"} className={"bg-[#80D8DA]"}>
+            Contact
+          </Button>
         </div>
       </div>
 
-      <div className="w-full md:hidden">
-        <img src={pic} alt="my profile picture"  className="object-cover rounded-full"/>
+      <div className="w-full max-w-[400px] mx-auto md:hidden">
+        <img
+          src={pic}
+          alt="my profile picture"
+          className="object-cover rounded-full"
+        />
       </div>
     </Container>
   );
