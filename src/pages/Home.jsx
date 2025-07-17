@@ -33,7 +33,7 @@ const Home = () => {
 
         <div className="w-full flex justify-between items-center py-4">
           <Button
-            route={"/resume"}
+            route={"/"}
             className={"bg-[#EEA302]"}
           >Resume</Button>
           <Button
@@ -41,7 +41,7 @@ const Home = () => {
             className={"bg-[#FF3B25]"}
           >Projects</Button>
           <Button
-            route={"/contact"}
+            route={"/"}
             className={"bg-[#80D8DA]"}
           >Contact</Button>
         </div>

@@ -6,11 +6,11 @@ const Footer = () => {
     <div className="w-full p-4 mt-12 border-t-[0.5px] border-gray-300 lg:flex justify-between items-center lg:pt-12 lg:pb-20">
       <div>
         <h2 className="text-lg font-bold">Phone</h2>
-        <p>+91 0000000000</p>
+        <p>+91 7485006011</p>
       </div>
       <div>
         <h2 className="text-lg font-bold">Email</h2>
-        <p>example@gmail.com</p>
+        <p>riturajbp89@gmail.com</p>
       </div>
       <div>
         <h2 className="text-lg font-bold">Follow Me</h2>

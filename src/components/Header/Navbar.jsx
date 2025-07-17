@@ -10,7 +10,7 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   return !isMenuOpen ? (
-    <div className="w-full py-8 px-4 flex justify-between items-center">
+    <div className="w-full py-6 px-4 flex justify-between items-center">
       <div className="flex items-center gap-2">
         <div className="w-6 h-6 rounded-full bg-amber-400"></div>
         <button
@@ -31,22 +31,22 @@ const Navbar = () => {
 
       <div className="hidden lg:flex items-center gap-2">
         <NavLink
-          to={"/resume"}
-          className={"font-light text-md tracking-wide hover:text-blue-600"}
+          to={"/"}
+          className={"font-light text-md tracking-wide hover:text-amber-400"}
         >
           Resume
         </NavLink>
         <PiLineVertical size={24}/>
         <NavLink
           to={"/projects"}
-          className={"font-light text-md tracking-wide hover:text-blue-600"}
+          className={"font-light text-md tracking-wide hover:text-amber-400"}
         >
           Projects
         </NavLink>
         <PiLineVertical size={24}/>
         <NavLink
-          to={"/contact"}
-          className={"font-light text-md tracking-wide hover:text-blue-600"}
+          to={"/"}
+          className={"font-light text-md tracking-wide hover:text-amber-400"}
         >
           Contact
         </NavLink>
@@ -68,7 +68,7 @@ const Navbar = () => {
         type="button"
         onClick={() => {
           setIsMenuOpen(false);
-          navigate("/resume");
+          navigate("/");
         }}
         className="text-2xl text-center m-4 cursor-pointer"
       >
@@ -90,7 +90,7 @@ const Navbar = () => {
         type="button"
         onClick={() => {
           setIsMenuOpen(false);
-          navigate("/contact");
+          navigate("/");
         }}
         className="text-2xl text-center m-4 cursor-pointer"
       >
